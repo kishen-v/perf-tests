@@ -21,7 +21,6 @@ import (
 	"encoding/json"
 	"flag"
 	"fmt"
-	"io/ioutil"
 	"os"
 	"path/filepath"
 	"time"
@@ -134,7 +133,7 @@ func run() error {
 // getFileList returns a list of all files with extension .out.
 func getFileList(dir string) ([]string, error) {
 	var fileNames []string
-	files, err := ioutil.ReadDir(dir)
+	files, err := os.ReadDir(dir)
 	if err != nil {
 		return fileNames, err
 	}

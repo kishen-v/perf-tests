@@ -28,8 +28,9 @@ import (
 
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/client-go/kubernetes"
+	"k8s.io/client-go/rest"
 	certutil "k8s.io/client-go/util/cert"
-	flowcontrol "k8s.io/client-go/util/flowcontrol"
+	"k8s.io/client-go/util/flowcontrol"
 	"k8s.io/klog/v2"
 )
 

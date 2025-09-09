@@ -31,6 +31,7 @@ import (
 	template "github.com/google/safetext/yamltemplate"
 
 	goerrors "github.com/go-errors/errors"
+
 	"k8s.io/apimachinery/pkg/apis/meta/v1/unstructured"
 	"k8s.io/perf-tests/clusterloader2/api"
 	"k8s.io/perf-tests/clusterloader2/pkg/errors"
